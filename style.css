@@ -1,0 +1,108 @@
+@import url(https://fonts.google.com/specimen/Kumbh+Sans);
+
+:root {
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-family: 'Kumnh Sans', sans-serif;
+}
+
+body{
+    background: var(--Dark-cyan);
+
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-image: url(./images/bg-pattern-top.svg),url(/images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat,no-repeat;
+
+    background-position: right 48vw bottom 40vh, left45vw top 44vh ;
+}
+
+.card{
+    background: var(--white);
+    text-align: center;
+
+    border-radius: 12px;
+    overflow: hidden;
+    
+
+    margin-bottom: 2rem;
+
+}
+
+.card_content_info {
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card_content_info_local {
+    color: var(--Dark-grayish-blue);
+    font-weight: 400;
+
+    margin: 0.5rem 0 2rem;
+}
+
+.card_content_info img{
+
+    
+    border: 6px solid var(--white);
+    border-radius: 50%;
+    margin-top: -20%;
+    margin-bottom: 5%;
+
+    
+}
+
+.card_content_info h1{
+    font-size: 18px;
+
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: 700;
+}
+
+.card_content_info span{
+    color: var(--Dark-grayish-blue);
+    margin-left: 0.3rem;
+}
+
+.card_content_details{
+    border-top: 1px solid hsl(227, 10% , 46%, 0.3);
+
+    display: flex;
+    justify-content: space-around;
+
+    padding: 20px 0;
+
+}
+
+
+.card_content_details_stats p{
+    font-size: 18px;
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: 700;
+}
+
+.card_content_details_stats span{
+    color: var(--Dark-grayish-blue);
+
+    letter-spacing: 1.4px;
+
+    font-size: 11px;
+}
